@@ -41,5 +41,18 @@ When you upload an image, the skill will reply with:
 - **Prompt Engineers:** Standardize the way images are analyzed and converted into text.
 - **Photography Enthusiasts:** Analyze lighting setups, camera angles, and depth-of-field choices from existing photos.
 
+## 📸 Showcase
+
+*(Add your images to the `assets/` folder and name them `original_sample.jpg` and `generated_sample.jpg` to display them here!)*
+
+| Original Input Image | AI Generated Result from Extracted Prompt |
+| :---: | :---: |
+| ![Original Input](assets/original_sample.jpg) | ![Generated Output](assets/generated_sample.jpg) |
+
+## 📚 Documentation & Tuning
+
+Want to customize how the AI analyzes images or formats the prompt? 
+Check out our **[Prompt Tuning Guide](docs/prompt_tuning_guide.md)** to learn how to modify schemas and control the output aesthetic.
+
 ---
 *Built for WorkBuddy AI to empower high-fidelity image-to-text workflows.*
