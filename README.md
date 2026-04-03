@@ -9,7 +9,9 @@ The **Image Reversal** skill acts as your personal visual analyst and prompt eng
 ## ✨ Core Features
 
 - **Micro-level Deconstruction:** Breaks down images into strictly defined dimensions (`subject`, `hair`, `body`, `pose`, `clothing`, `photography`, `background`, `the_vibe`).
+- **Dynamic Schema Routing (v2.0):** Automatically detects whether the image is a Portrait, Architecture, or Product, and applies the perfect domain-specific JSON template.
 - **Production-Ready Prompts:** Automatically outputs a 100-150 word cinematic English prompt optimized for Midjourney (v6) and Stable Diffusion.
+- **Auto-Archiving Workflow (v3.0):** Equipped with a Python script that automatically intercepts the AI's output and saves the JSON and Prompt into organized, timestamped folders in your local `~/Pictures/RIP-Prompts/` directory.
 - **Authenticity Control:** Built-in constraints and negative prompts (e.g., avoiding "plastic skin", "3d render") to ensure high-realism and organic outputs.
 - **Strict JSON Schema:** Always outputs a predictable, structured JSON format for easy reading and programmatic integration.
 
