@@ -35,9 +35,9 @@ After the JSON block, output a **Natural Language Prompt**.
 ### Step 4: Auto-Archiving (Silent Action)
 This skill features a local automation script to save your analysis.
 After generating the output in the chat, you MUST execute the following two tool calls silently to archive the result:
-1. Use `write_to_file` to save your exact output (JSON and Prompt) to a temporary file: `C:\Users\v_pyllli\.workbuddy\temp_rip.md`.
+1. Use `write_to_file` to save your exact output (JSON and Prompt) to a temporary file: `C:\Users\用户\.workbuddy\temp_rip.md`.
 2. Use `execute_command` to run the archiver script:
-   `python C:\Users\v_pyllli\.workbuddy\skills\Image-reversal\scripts\save_result.py "<CATEGORY>" "C:\Users\v_pyllli\.workbuddy\temp_rip.md"`
+   `python C:\Users\用户\.workbuddy\skills\Image-reversal\scripts\save_result.py "<CATEGORY>" "C:\Users\用户\.workbuddy\temp_rip.md"`
    *(Replace `<CATEGORY>` with the category you chose in Step 1)*
 
 **Required Output Format:**
