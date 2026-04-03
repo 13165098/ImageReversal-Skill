@@ -5,25 +5,39 @@
     "ethnicity_or_features": "<string>"
   },
   "anatomical_and_micro_details": {
-    "facial_structure": {
-      "bone_structure": "<string: e.g., high cheekbones, strong jawline>",
-      "symmetry_and_proportions": "<string>"
+    "facial_structure_and_positioning": {
+      "bone_structure": "<string: e.g., high cheekbones, strong jawline, prominent brow bone>",
+      "three_dimensional_depth": "<string: e.g., deep-set eyes, flat midface, prominent projection>",
+      "symmetry_and_proportions": "<string: golden ratio alignments, specific asymmetries>",
+      "feature_specific_lighting_interaction": "<string: e.g., Rembrandt light triangle on far cheek, butterfly shadow under nose, contour shadows in hollows>"
     },
     "skin_texture": {
       "micro_details": ["<string: pores, peach fuzz, subtle freckles, micro-wrinkles>"],
-      "subsurface_scattering": "<string: skin translucency and light bleeding>",
+      "subsurface_scattering": "<string: skin translucency and light bleeding, especially on cartilage/ears>",
       "complexion_and_tone": "<string>",
       "imperfections": ["<string: moles, scars, uneven pigmentation>"]
     },
-    "eyes": {
-      "iris_details": "<string: pattern, color depth>",
+    "eyes_and_periocular": {
+      "spatial_position": "<string: spacing between eyes, canthal tilt (positive/negative/neutral)>",
+      "iris_details": "<string: pattern, color depth, limbal ring>",
       "sclera_and_veins": "<string>",
-      "catchlights": {"shape": "<string: e.g., rectangular softbox reflection>", "intensity": "<string>"},
-      "eyelashes_and_brows": "<string: thickness, direction, stray hairs>"
+      "catchlights": {"shape": "<string: e.g., rectangular softbox>", "intensity": "<string>", "placement": "<string: e.g., 10 o'clock position>"},
+      "eyelashes_and_brows": {"thickness": "<string>", "direction": "<string>", "light_interaction": "<string: e.g., backlit stray hairs>"}
+    },
+    "nose_and_nasal_structure": {
+      "bridge_and_profile": "<string: straight, aquiline, button, dorsal hump>",
+      "highlight_and_specular": "<string: thin continuous highlight down the bridge, tip specular reflection>",
+      "shadow_cast": "<string: direction, length, and softness of the shadow cast by the nose>"
     },
     "mouth_and_lips": {
+      "spatial_relationship": "<string: distance to nose (philtrum length), lip fullness ratio>",
       "texture": "<string: chapped, glossy, lip lines>",
-      "teeth": "<string|N/A>"
+      "lip_lighting": "<string: specular highlight on cupid's bow, deep shadow under lower lip>",
+      "teeth": "<string|N/A: e.g., visible incisors, slight overbite>"
+    },
+    "ears_and_jawline": {
+      "ear_position_and_lighting": "<string: flush/protruding, intense subsurface scattering on helix rim>",
+      "jaw_contour_shadow": "<string: hard definition vs soft roll-off into the neck, reflected light from collar>"
     },
     "hair_dynamics": {
       "strand_thickness": "<string>",
