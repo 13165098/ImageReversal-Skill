@@ -43,11 +43,11 @@ When you upload an image, the skill will reply with:
 
 ## 📸 Showcase
 
-*(Add your images to the `assets/` folder and name them `original_sample.jpg` and `generated_sample.jpg` to display them here!)*
+*(Here are the preview images demonstrating the reverse engineering capability!)*
 
 | Original Input Image | AI Generated Result from Extracted Prompt |
 | :---: | :---: |
-| ![Original Input](assets/original_sample.jpg) | ![Generated Output](assets/generated_sample.jpg) |
+| ![Original Input](assets/original_sample.png) | ![Generated Output](assets/generated_sample.png) |
 
 ## 📚 Documentation & Tuning
 
