@@ -1,38 +1,57 @@
 {
-  "architecture": {
-    "style": "<string: e.g., Brutalist, Modernist, Gothic, Cyberpunk>",
-    "structure_type": "<string: e.g., interior living room, skyscraper exterior>",
-    "primary_materials": ["<string>", "<string>"],
-    "geometry_and_lines": "<string: e.g., harsh diagonals, soft organic curves>"
+  "architectural_core": {
+    "typology": "<string: e.g., cultural center, brutalist residence>",
+    "architectural_style": "<string>",
+    "design_language": "<string: e.g., parametric curves, strict orthogonal grid>"
   },
-  "space_and_perspective": {
-    "scale": "<string: e.g., monumental, intimate>",
-    "camera_perspective": "<string: e.g., low-angle worm's eye, 1-point perspective, isometric>",
-    "focal_point": "<string>"
+  "structural_and_material_dissection": {
+    "primary_forms": ["<string: e.g., cantilevered concrete slabs, glass curtain walls>"],
+    "material_micro_textures": {
+      "material_1": {"type": "<string>", "finish": "<string>", "imperfections": "<string: e.g., formwork tie-hole marks, rust streaks, efflorescence>"},
+      "material_2": {"type": "<string>", "finish": "<string>", "imperfections": "<string>"}
+    },
+    "joinery_and_details": {
+      "connections": "<string: e.g., exposed steel bolts, seamless silicone glazing>",
+      "edges": "<string: sharp right angles, chamfered, filleted>"
+    },
+    "façade_and_fenestration": {
+      "window_frames": "<string>",
+      "glass_properties": "<string: e.g., low-E coating green tint, slight warpage/distortion in reflections>"
+    }
   },
-  "lighting_and_atmosphere": {
-    "time_of_day": "<string>",
-    "natural_light": "<string: e.g., soft diffused, harsh volumetric sun shafts>",
-    "artificial_light": "<string: e.g., warm tungsten, neon pink glow>",
-    "shadows": "<string: e.g., deep contrast, soft gradient>"
+  "spatial_composition_and_geometry": {
+    "scale_and_proportion": "<string: e.g., monumental scale, human-centric intimacy>",
+    "leading_lines_and_grid": "<string: converging verticals, golden ratio proportions>",
+    "negative_space": "<string: relationship between mass and void>"
   },
-  "environment": {
-    "setting": "<string: e.g., urban forest, cliffside>",
-    "weather": "<string|N/A>",
-    "foliage_or_decor": ["<string>"]
+  "lighting_and_environmental_interaction": {
+    "natural_illumination": {
+      "sun_position": "<string: azimuth and elevation, e.g., low golden hour sun>",
+      "shadow_play": "<string: e.g., sharp geometric cast shadows, dappled light through louvers>",
+      "global_illumination": "<string: light bouncing off adjacent colored surfaces (radiosity)>"
+    },
+    "artificial_lighting": {
+      "fixtures": ["<string: e.g., recessed floor uplights, linear LED coves>"],
+      "color_temperature": "<string: e.g., 3000K warm white vs 6000K cool twilight>"
+    },
+    "weather_and_atmosphere": {
+      "atmospheric_perspective": "<string: mist, smog, dust suspended in light shafts>",
+      "surface_weathering": "<string: water runoff stains, moss accumulation at base>"
+    }
   },
-  "photography": {
-    "lens_type": "<string: e.g., 14mm ultra-wide, tilt-shift>",
-    "texture": "<string: e.g., architectural digest style, grainy film>",
-    "render_engine_look": "<string: e.g., Octane Render, Unreal Engine 5, photorealistic>"
+  "optical_and_photographic_setup": {
+    "camera_position": {"height": "<string: e.g., eye-level, drone aerial>", "tilt": "<string: e.g., perfectly plumb verticals (tilt-shift)>"},
+    "lens_characteristics": "<string: e.g., 17mm tilt-shift, zero barrel distortion>",
+    "exposure_and_dynamic_range": "<string: HDR rendering, clipped highlights, deep crushed blacks>"
   },
   "the_vibe": {
+    "genius_loci": "<string: the spirit of the place>",
     "mood": "<string>",
-    "aesthetic": "<string>"
+    "aesthetic_category": "<string>"
   },
-  "constraints": {
-    "must_keep": ["<string>"],
-    "avoid": ["<string>"]
+  "prompt_generation_instructions": {
+    "midjourney_parameters": "--ar <ratio> --style raw --v 6.0",
+    "must_include_keywords": ["<string>"]
   },
-  "negative_prompt": ["warped lines", "impossible geometry", "blurry", "people", "cluttered"]
+  "negative_prompt": ["warped geometry", "impossible structural logic", "bending walls", "cartoonish", "overly bright", "cluttered entourage"]
 }

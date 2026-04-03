@@ -1,36 +1,68 @@
 {
-  "product": {
-    "type": "<string: e.g., perfume bottle, mechanical keyboard, sports car>",
-    "brand_identity": "<string: e.g., minimalist, luxury, high-tech>",
-    "materials_and_finish": {
-      "primary": "<string: e.g., matte black plastic, brushed aluminum>",
-      "secondary": "<string>",
-      "details": "<string: e.g., embossed logo, metallic trim>"
+  "product_core": {
+    "category": "<string: e.g., consumer electronics, luxury cosmetic>",
+    "form_factor": "<string>",
+    "brand_language": "<string: e.g., Dieter Rams Braun minimalism, aggressive gamer aesthetic>"
+  },
+  "industrial_design_and_micro_details": {
+    "surface_topology": {
+      "continuity": "<string: e.g., G3 continuous curves, hard chamfered edges>",
+      "parting_lines": "<string: visibility and width of manufacturing seams>",
+      "fillets_and_radii": "<string: specific edge rounding details>"
+    },
+    "material_science_and_Cmf": {
+      "primary_material": {
+        "type": "<string>",
+        "albedo": "<string: base color>",
+        "roughness": "<string: e.g., micro-sandblasted matte, high-gloss polish>",
+        "anisotropy": "<string|N/A: e.g., circular brushed metal grain>"
+      },
+      "secondary_material": {
+        "type": "<string>",
+        "refraction_and_caustics": "<string|N/A: index of refraction, internal light scattering>"
+      },
+      "manufacturing_defects_and_realism": ["<string: micro-dust particles, subtle fingerprint smudges, injection molding sink marks>"]
+    },
+    "branding_and_graphics": {
+      "application_method": "<string: e.g., pad printed, laser etched, debossed>",
+      "legibility": "<string>"
     }
   },
-  "staging": {
-    "surface": "<string: e.g., wet asphalt, mirrored glass, velvet podium>",
-    "background": "<string: e.g., seamless studio backdrop, dark moody gradient>",
-    "props": ["<string>"]
+  "studio_staging_and_composition": {
+    "pedestal_and_surface": {
+      "material": "<string: e.g., frosted acrylic podium, rippled water, dark asphalt>",
+      "contact_shadow": "<string: sharp ambient occlusion at base>"
+    },
+    "background_environment": "<string: seamless cyclorama, abstract bokeh, concrete wall>",
+    "floating_elements_or_props": ["<string: e.g., water splashes, floating geometric primitives>"]
   },
-  "lighting_setup": {
-    "style": "<string: e.g., commercial studio lighting, moody low-key>",
-    "key_light": "<string>",
-    "rim_light": "<string: e.g., strong blue rim light on the edge>",
-    "reflections_and_specular": "<string: e.g., sharp long highlights on glass>"
+  "lighting_and_render_setup": {
+    "studio_lighting_rig": {
+      "key_light": "<string: e.g., large overhead softbox with grid>",
+      "rim_lights": ["<string: e.g., twin strip boxes highlighting the silhouette>"],
+      "bounce_and_negative_fill": "<string: e.g., black flags to increase contrast on the sides>"
+    },
+    "specular_highlights": {
+      "shape": "<string: e.g., long continuous zebra-stripe reflections>",
+      "intensity": "<string>"
+    }
   },
-  "photography": {
-    "camera_angle": "<string: e.g., macro close-up, top-down flat lay>",
-    "lens": "<string: e.g., 100mm macro>",
-    "depth_of_field": "<string: e.g., product fully in focus, background blurred>"
+  "optical_and_photographic_setup": {
+    "lens_and_focal_length": "<string: e.g., 100mm macro, 50mm standard>",
+    "depth_of_field": {
+      "focus_stacking": "<string: true/false, implies entire product is sharp>",
+      "bokeh_quality": "<string: smooth, bubbly, anamorphic>"
+    },
+    "camera_angle": "<string: e.g., 45-degree isometric, dynamic dutch angle>"
   },
   "the_vibe": {
-    "aesthetic": "<string>",
-    "mood": "<string>"
+    "commercial_appeal": "<string>",
+    "mood": "<string>",
+    "aesthetic_category": "<string>"
   },
-  "constraints": {
-    "must_keep": ["<string>"],
-    "avoid": ["<string>"]
+  "prompt_generation_instructions": {
+    "midjourney_parameters": "--ar <ratio> --style raw --v 6.0",
+    "must_include_keywords": ["<string>"]
   },
-  "negative_prompt": ["deformed shape", "noisy", "bad text", "watermark", "messy background"]
+  "negative_prompt": ["deformed shape", "noisy textures", "floating text", "bad proportions", "amateur lighting", "flat reflections"]
 }
