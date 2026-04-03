@@ -1,0 +1,30 @@
+{
+  "subject": {
+    "description": "<string: brief description of subject>",
+    "mirror_rules": "<string|N/A>",
+    "age": "<string|N/A>",
+    "expression": {
+      "eyes": {"look": "<string>", "energy": "<string>", "direction": "<string>"},
+      "mouth": {"position": "<string>", "energy": "<string>"},
+      "overall": "<string>"
+    },
+    "face": {"preserve_original": "<string>", "makeup": "<string>"}
+  },
+  "hair": {"color": "<string>", "style": "<string>", "effect": "<string>"},
+  "body": {
+    "frame": "<string>",
+    "waist": "<string|N/A>", "chest": "<string|N/A>", "legs": "<string|N/A>",
+    "skin": {"visible_areas": "<string>", "tone": "<string>", "texture": "<string>", "lighting_effect": "<string>"}
+  },
+  "pose": {"position": "<string>", "base": "<string>", "overall": "<string>"},
+  "clothing": {
+    "top": {"type": "<string>", "color": "<string>", "details": "<string>", "effect": "<string>"},
+    "bottom": {"type": "<string|N/A>", "color": "<string|N/A>", "details": "<string|N/A>"}
+  },
+  "accessories": {"headwear": "<string|N/A>", "jewelry": "<string|N/A>", "device": "<string|N/A>", "prop": "<string|N/A>"},
+  "photography": {"camera_style": "<string>", "angle": "<string>", "shot_type": "<string>", "aspect_ratio": "<string>", "texture": "<string>", "lighting": "<string>", "depth_of_field": "<string>"},
+  "background": {"setting": "<string>", "wall_color": "<string|N/A>", "elements": ["<string>"], "atmosphere": "<string>", "lighting": "<string>"},
+  "the_vibe": {"energy": "<string>", "mood": "<string>", "aesthetic": "<string>", "authenticity": "<string>", "intimacy": "<string>", "story": "<string>", "caption_energy": "<string>"},
+  "constraints": {"must_keep": ["<string>"], "avoid": ["<string>"]},
+  "negative_prompt": ["plastic skin", "3d render", "heavy makeup", "studio lighting", "harsh shadows", "deformed fingers", "stiff hair"]
+}

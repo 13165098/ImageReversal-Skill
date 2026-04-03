@@ -1,0 +1,38 @@
+{
+  "architecture": {
+    "style": "<string: e.g., Brutalist, Modernist, Gothic, Cyberpunk>",
+    "structure_type": "<string: e.g., interior living room, skyscraper exterior>",
+    "primary_materials": ["<string>", "<string>"],
+    "geometry_and_lines": "<string: e.g., harsh diagonals, soft organic curves>"
+  },
+  "space_and_perspective": {
+    "scale": "<string: e.g., monumental, intimate>",
+    "camera_perspective": "<string: e.g., low-angle worm's eye, 1-point perspective, isometric>",
+    "focal_point": "<string>"
+  },
+  "lighting_and_atmosphere": {
+    "time_of_day": "<string>",
+    "natural_light": "<string: e.g., soft diffused, harsh volumetric sun shafts>",
+    "artificial_light": "<string: e.g., warm tungsten, neon pink glow>",
+    "shadows": "<string: e.g., deep contrast, soft gradient>"
+  },
+  "environment": {
+    "setting": "<string: e.g., urban forest, cliffside>",
+    "weather": "<string|N/A>",
+    "foliage_or_decor": ["<string>"]
+  },
+  "photography": {
+    "lens_type": "<string: e.g., 14mm ultra-wide, tilt-shift>",
+    "texture": "<string: e.g., architectural digest style, grainy film>",
+    "render_engine_look": "<string: e.g., Octane Render, Unreal Engine 5, photorealistic>"
+  },
+  "the_vibe": {
+    "mood": "<string>",
+    "aesthetic": "<string>"
+  },
+  "constraints": {
+    "must_keep": ["<string>"],
+    "avoid": ["<string>"]
+  },
+  "negative_prompt": ["warped lines", "impossible geometry", "blurry", "people", "cluttered"]
+}
