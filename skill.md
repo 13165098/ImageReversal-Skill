@@ -1,5 +1,5 @@
 ---
-name: Image reversal
+name:Image-reversal
 description: A high-precision Vision-Language Image Reverse Engineering skill. It dynamically extracts structured JSON metadata based on image type and generates cinematic prompts.
 version: 2.0.0
 ---
