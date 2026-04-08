@@ -17,10 +17,8 @@ The **Image Reversal** skill acts as your personal visual analyst and prompt eng
 
 ## 🚀 Installation & Usage
 
-**For WorkBuddy Users:**
-
-1. Install this skill by copying `SKILL.md` into your local `~/.workbuddy/skills/Image-reversal/` directory.
-2. In the WorkBuddy chat, upload an image (preferably high-resolution).
+1. Install this skill by copying into your local directory.
+2. In the chat, upload an image (preferably high-resolution).
 3. Invoke the skill by typing:
    ```text
    @Image reversal
